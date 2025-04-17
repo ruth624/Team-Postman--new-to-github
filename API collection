@@ -1,22 +1,22 @@
 {
 	"info": {
 		"_postman_id": "58035c94-eb62-4de1-8909-6cee4a9da633",
-		"name": "first collection",
+		"name": "API collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40125689"
 	},
 	"item": [
 		{
-			"name": "API COLLECTION",
+			"name": "First API testing",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code should be 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"pm.test(\"Status code should be 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Status code name have an OK string\", function () {\r",
+							"pm.test(\"Status code name should have an OK string\", function () {\r",
 							"    pm.response.to.have.status(\"OK\");\r",
 							"});"
 						],
@@ -29,7 +29,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-				"key": "REDACTED"	
+					"raw": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -43,7 +43,7 @@
 					"query": [
 						{
 							"key": "access_key",
-					"key": "REDACTED"		
+							"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
 						}
 					]
 				}

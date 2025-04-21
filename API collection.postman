@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "First API testing",
+			"name": "Get All Todo Entries",
 			"event": [
 				{
 					"listen": "test",
@@ -25,26 +25,32 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+					"raw": "https://demo.fusio-project.org/index.php/",
 					"protocol": "https",
 					"host": [
-						"api",
-						"postman",
-						"com"
+						"demo",
+						"fusio-project",
+						"org"
 					],
 					"path": [
-						"collections",
-						"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0"
-					],
-					"query": [
-						{
-							"key": "access_key",
-							"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
-						}
+						"index.php",
+						""
 					]
 				}
 			},
